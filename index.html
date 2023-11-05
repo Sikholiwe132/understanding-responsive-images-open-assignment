@@ -23,15 +23,31 @@
 		body {
 			font: 1em/1.5 'Merriweather', Georgia, serif;
 			padding: 3em 0;
+			margin: 0;
+			background-color: #eceaea;
 		}
 
 		h1 {
 			font-family: 'Lato', Arial, sans-serif;
+			color: #333;
 		}
 
 		header,
 		footer {
 			text-align: center;
+		}
+
+		main {
+			max-width: 65ch;
+			margin: 0 auto;
+			padding: 0 1em;
+		}
+
+		.figure-grp {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1em;
+			margin-top: -3.5em;
 		}
 
 		figure {
@@ -44,8 +60,10 @@
 			margin-top: 1.5em;
 			font-style: italic;
 			font-weight: 300;
-			color: #CC9B70;
+			color: #000;
 			text-align: left;
+			color: #666;
+			font-size: 0.9em;
 		}
 
 		figcaption::before {
@@ -67,12 +85,7 @@
 		}
 
 		figure.half {
-			width: 50%;
-			float: left;
-		}
-
-		.figure-grp+.figure-grp figure {
-			margin-top: -3em;
+			width: 100%;
 		}
 
 		blockquote {
@@ -82,6 +95,9 @@
 			font-size: 1.2em;
 			max-width: 30em;
 			margin: 3em auto;
+			border-left: 4px solid #ccc;
+			padding-left: 1em;
+			margin-left: 0;
 		}
 
 		blockquote::before {
@@ -91,24 +107,31 @@
 		blockquote cite {
 			margin-top: 1.5em;
 			display: block;
+			color: #777;
 		}
 
 		p {
 			color: #444;
-			max-width: 45em;
-			margin-left: auto;
-			margin-right: auto;
+			line-height: 1.8;
 		}
 
 		img {
-			width: 100%;
+			max-width: 100%;
 			height: auto;
 			display: block;
+		}
+
+		footer {
+			background-color: #fff;
+			padding: 2em 0;
+			color: #777;
 		}
 
 		hr {
 			max-width: 45em;
 			margin: 3em auto;
+			border: 0;
+			border-top: 1px solid #ddd;
 		}
 	</style>
 </head>
